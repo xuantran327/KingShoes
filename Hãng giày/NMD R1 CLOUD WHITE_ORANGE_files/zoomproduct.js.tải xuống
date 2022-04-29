@@ -1,0 +1,77 @@
+(function($) {"use strict";
+	function productThumbnailChange() {
+		var originImageData;
+		$('.ps-shoe__variants').on('mouseenter', 'img', function() {
+			var image = $(this).attr('src');
+			var originImage = $(this).closest('.ps-shoe').find('.ps-shoe__thumbnail img');
+			originImageData = originImage.attr('src');
+			originImage.attr('src', image);
+		});
+	}
+	function zoomAction() {
+		$('.zoom').each(function() {
+			if ($(this).parent().hasClass('slick-active')) {
+				$(this).elevateZoom({
+					responsive: true,
+					zoomType: "inner",
+					zoomWindowWidth: 600,
+					zoomWindowHeight: 600
+				});
+			}
+		});
+	}
+	function zoomInit() {
+		var zoom = $('.ps-product__image .item').first().find('.zoom');
+		var primary = $('.ps-product__image .item.slick-active').first().children('.zoom');
+		primary.elevateZoom({
+			responsive: true,
+			zoomType: "inner",
+			zoomWindowWidth: 600,
+			zoomWindowHeight: 600
+		});
+	}
+	function slickConfig() {
+		var primary = $('.ps-product__image'),
+			second = $('.ps-product__variants');
+			primary.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			asNavFor: '.ps-product__variants',
+			dots: false,
+			arrows: false,
+		});
+		second.slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			arrows: false,
+			focusOnSelect: true,
+			asNavFor: '.ps-product__image',
+			vertical: true,
+			responsive: [{
+				breakpoint: 992,
+				settings: {
+					arrows: false,
+					slidesToShow: 4,
+					vertical: false
+				}
+			}, {
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 3,
+					vertical: false
+				}
+			}, ]
+		});
+		primary.on('afterChange', function(event, slick, currentSlide) {
+			zoomAction();
+		});
+		primary.on('beforeChange', function(event, slick, currentSlide) {
+			$('.zoomContainer').remove();
+		});
+	}
+	jQuery(document).ready(function() {
+		productThumbnailChange();
+		slickConfig();
+		zoomInit();
+	});
+})(jQuery);

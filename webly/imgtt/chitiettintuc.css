@@ -1,0 +1,47 @@
+.ngaygio {
+    color: rgb(179, 176, 176);
+}
+
+.indam {
+    font-weight: bold;
+}
+
+.hieuung a {
+    text-decoration: none;
+    color: black;
+}
+
+.hieuung a:hover {
+    text-decoration: none;
+    color: #FED700;
+}
+
+.thecard {
+    cursor: pointer;
+    color: rgb(128, 126, 126);
+}
+
+.thecard img {
+    width: 100%;
+    display: flex;
+}
+
+.thecard img:hover {
+    opacity: 0.5;
+}
+
+.thecard h5 {
+    color: black;
+}
+
+.thecard h5:hover {
+    color: #FED700;
+}
+
+.maunen {
+    background-color: #FED700;
+}
+
+.kcach {
+    margin-bottom: 40px;
+}

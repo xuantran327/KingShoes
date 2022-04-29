@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+          function dangky(){
+    var u = document.getElementById("username").value;
+    var p = document.getElementById("password").value;
+    var pc = document.getElementById("password1").value;
+    var sdt = document.getElementById("sodienthoai").value;
+    var ht = document.getElementById("fullname").value;
+     var vnf_regex = /(([0-9]{10})\b)/g;
+
+    if(u=="" || p=="" || pc=="" || sdt=="" || ht==""){
+      alert("Vui lòng nhập email hoặc mật khẩu...");
+    }
+    if(vnf_regex.test(sdt) == false){
+  alert("Số điện thoại không hợp lệ...");
+    }
+    else if(p.length < 8 || p.length >16){
+      alert("Mật khẩu phải có từ 8-16 kí tự...");
+    }
+    else if(p!=pc){
+        alert("Mật khẩu xác nhận không trùng khớp...");
+    form = document.getElementById("admin");
+            form.setAttribute("action","DangNhap.html");   
+    }
+    else{
+       alert("Đăng ký thành công");
+     
+    }
+  } 
+        </script>
+        <title> Đăng ký </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CuoiKy.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body class="bg-sneakers text-light">
+        <div class="bg-black-75 rounded text-center p-5 mx-auto margin-auto" style="width: 600px;">
+            <h1>ĐĂNG KÝ</h1>
+            <form action="" method="POST" class="mt-5" >
+                 <form class="form-inline"  id="admin" action="">
+    <div style="margin-bottom: 20px"><label for="username" class="mb-2 mr-sm-2 float-left" style="width: 20%;text-align: left;">Tài khoản:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 " id="username" placeholder="Enter username" name="username" style="width: 70%;"></div>
+    <div style="margin-bottom: 20px"><label for="sdt" class="mb-2 mr-sm-2 float-left" style="width: 20%;text-align: left;">Số điện thoại:</label>
+    <div class="input-group mb-2 mr-sm-2"style="width: 70%;">
+    <div class="input-group-prepend" >
+      <span class="input-group-text">
+       <select style="font-size: 13px;background-color:rgb(232,236,239);border-style: none; ">
+          <option value="default">+84 VN</option>
+                        <option>+81 JP</option>
+                        <option>+1 US</option>
+                        <option>+44 UK</option>
+                        <option>+65 SIN</option>
+                        <option>+86 CN</option>
+      </select>
+  </span>
+    </div>    
+    <input type="text" class="form-control " id="sodienthoai" placeholder="Enter PhoneNumber" name="sodienthoai" style="width: 20%;"></div></div>
+    <div style="margin-bottom: 20px"><label for="pwd2" class="mb-2 mr-sm-2 float-left" style="width: 20%;text-align: left;">Mật khẩu:</label>
+    <input type="password" class="form-control mb-2 mr-sm-2" id="password" placeholder="Enter password" name="password" style="width: 70%;"></div>
+   <div style="margin-bottom: 20px"> <label for="pwd2" class="mb-2 mr-sm-2 float-left" style="width: 20%;text-align: left;">Xác nhận:</label>
+    <input type="password" class="form-control mb-2 mr-sm-2" id="password1" placeholder="Conform password" name="password1" style="width: 70%;"></div>
+    <div style="margin-bottom: 20px"><label for="email2" class="mb-2 mr-sm-2 float-left" style="width: 20%;text-align: left;">Họ và tên:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="fullname" placeholder="Full name" name="fullname" style="width: 70%;"></div>
+</form>
+      <form action="/action_page.php">
+    <div class="form-inline" style="margin-bottom: 20px;">
+      <label for="sel1" style="width: 20%;text-align: left;margin-left: -15px;margin-right: 13px">Ngày sinh:</label>
+      <select class="form-control " id="sel1" name="sellist1" style="margin-left: 10px;width: 23%;">
+        <option value="default">Day</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+        
+      </select>
+       <select class="form-control " id="sel2" name="sellist2" style="margin-left: 10px;width: 24%;">
+          <option value="default">Month</option>
+                        <option value="1">Tháng 1</option>
+                        <option value="2">Tháng 2</option>
+                        <option value="3">Tháng 3</option>
+                        <option value="4">Tháng 4</option>
+                        <option value="5">Tháng 5</option>
+                        <option value="6">Tháng 6</option>
+                        <option value="7">Tháng 7</option>
+                        <option value="8">Tháng 8</option>
+                        <option value="9">Tháng 9</option>
+                        <option value="10">Tháng 10</option>
+                        <option value="11">Tháng 11</option>
+                        <option value="12">Tháng 12</option>
+      </select>
+       <select class="form-control " id="sel3" name="sellist3" style="margin-left: 10px">
+        <option value="default">Year</option>
+
+        <option>1984</option>
+        <option>1985</option>
+        <option>1986</option>
+        <option>1987</option>
+        <option>1988</option>
+        <option>1989</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>    
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+      </select>
+    </div>
+  </form>
+   <div style="margin-bottom: 20px">
+  <label for="email2" class="mb-2 mr-sm-2 float-left" style="width: 20%;text-align: left;">Giới tính:</label>  
+  <div class="form-check-inline">
+  <label class="form-check-label" >
+    <input type="radio" class="form-check-input" name="optradio">Nam
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label" style="margin:0 30px">
+    <input type="radio" class="form-check-input" name="optradio">Nữ
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Khác   
+  </label>
+</div>
+</div>
+<div class="form-check-inline float-left">
+  <label class="form-check-label " style="font-size: 13px;">
+    <input type="checkbox" class="form-check-input" value=""> Tôi đồng ý với các <a href="">Điều khoản</a> của Website.
+  </label>
+</div>
+
+                 <div style="margin-bottom: 10px">
+                    <input type="submit" onclick="dangky()" class="bg-warning text-light border-none pt-1 pb-2 width-1 rounded mt-4 mb-2" value="Đăng ký"> 
+                                    </div>
+                <div class="row">
+                    <div class="float-left" style="width: 80%;text-align: left;margin-left: 18px;"><a href="file:///F:/CongNgheWeb/%C4%90%E1%BB%93%20%C3%81n%20Web/DangNhap.html" class="text-warning">Đăng nhập</a></div>
+                    <div class="float-right"><a href="" class="text-warning">Trợ giúp ?</a></div>
+                </div>
+                 <div class="form-group text-center" style="padding-left: 30px;">
+        <div class="float-left" style="width: 40%"><hr style="border-color: white"></div> 
+        <div class="float-left" style="width: 15%;color:white"> Hoặc</div> 
+        <div class="float-left" style="width: 40%"><hr style="border-color: white"></div>   
+        </div>
+             <div class="form-group text-center">
+        <button style="margin: 0px 5px" type="button" class="btn btn-primary" ><i style="font-size: 20px" class="fab fa-facebook-square"></i> Facebook</button><button  style="margin: 0px 5px" type="button" class="btn btn-light" ><img src="googleg_standard_color_64dp.png" style="width: 18px;"> Google</button><button  style="margin: 0px 5px" type="button" class="btn btn-dark" ><i style="font-size: 20px" class="fab fa-apple"></i> Apple</button></div>
+            </form>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,126 @@
+.rightcol {
+    /* background: rgb(228, 25, 25); */
+}
+
+.leftcol {
+    /* background-color: greenyellow; */
+}
+
+.leftcol h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.leftcol p {
+    font-size: 17px;
+}
+
+.leftcol img {
+    margin-bottom: 7px;
+    width: 98%;
+}
+
+.anh6 {
+    padding-left: 0px;
+    margin-right: 10px;
+}
+
+.anh6 img {
+    width: 33%;
+}
+
+.rightcol hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+    font-size: 2px;
+}
+
+.tintuc h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tintuc ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tintuc li {
+    margin-bottom: 15px;
+}
+
+.tintuc img {
+    width: 22%;
+    height: 70px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.tintuc p {
+    line-height: 19px;
+}
+
+.tintuc a {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tintuc a:hover {
+    color: #FED700;
+}
+
+.tt span {
+    font-size: 14px;
+}
+
+.sanpham li {
+    margin-bottom: 30px;
+}
+
+.sp span {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.sp p {
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.sp a {
+    font-size: 16px;
+}
+
+.sp i {
+    color: rgb(243, 192, 53);
+}
+
+.tag li {
+    display: inline;
+}
+
+
+/* margirn :top right bottom left */
+
+.tag a {
+    display: inline-block;
+    border: 1px solid rgb(206, 204, 204);
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(206, 204, 204);
+    margin: 0px 8px 15px 0px;
+}
+
+.tag a:hover {
+    color: white;
+    background-color: #FED700;
+}

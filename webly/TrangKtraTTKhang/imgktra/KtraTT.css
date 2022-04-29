@@ -1,0 +1,50 @@
+.gioithieu img {
+    width: 60%;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.bac {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.bac li {
+    display: inline;
+}
+
+.mau {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 7px 10px 7px 10px;
+}
+
+.hieuung {
+    margin-bottom: 30px;
+}
+
+.hieuung a {
+    text-decoration: none;
+    color: black;
+}
+
+.hieuung a:hover {
+    text-decoration: none;
+    color: #FED700;
+}
+
+.btnKtra {
+    border-radius: 30px;
+    font-weight: bolder;
+    width: 100%;
+    box-shadow: 0px 0px 0px 5px rgb(224, 222, 222);
+    font-size: 22px;
+}
+
+.indam {
+    font-weight: bold;
+    text-align: center;
+}
